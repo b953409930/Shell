@@ -1,7 +1,7 @@
 #!/bin/bash
 ssh_remote_pasword=""
-ssh_remote_port="50008"
-ssh_remote_user="appuser"
+ssh_remote_port="1111"
+ssh_remote_user="test"
 ssh_remote_host="139"
 ssh_pub="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLlgc1nlfXkXnVmO1MmhgYrbjznkjhamt5jSytFVpGqsYUVp/1e60G7qdytWktuVUDTjkZCtUX9d6BF1E8bzNtAjUY295SBbwp7dmzX4nfXAEB7SXnvYdbCbpmSpK26pWAGGsyNWq/IpnwSE7UvSQiJAobxmTIBVij4eReBQVmbH687A6+zLK8R5U4wbLT6lENSRnbhBrYCGy5QTcPt7mUg5lWHPzJhK8hj/qeaEPtngp2PiSKiZxY+72xlR44O1IrCv80YL1LkfqgXh8WCpyFDC8jMtygWWNcc2ZMjif/60iGJ9d/OtNEsH0R00p4W8WpVVPgiJLtjCN3vWDLjxnh root@es3"
 local_port="22"
@@ -13,10 +13,10 @@ function usage(){
         --help           查看帮助手册
         -l,--local_port  指定要转发的本地端口,不写默认为本地22 ssh端口
         -r,--remote_port 指定转发到远程主机的哪个端口,不写,会从2000~65535随机生成一个端口
-        -h,--host        指定远程主机的ip,不写默认为139.198.15.29 50008端口青云服务器的
-        -p,--pasword     指定远程主机的密码,不写默认为139.198.15.29 50008端口青云服务器的
-        -p,--Port        指定远程主机的登录端口,不写默认为139.198.15.29 50008端口青云服务器的
-        -u,--user        指定远程主机的登录用户,不写默认为139.198.15.29 50008端口青云服务器的
+        -h,--host        指定远程主机的ip,不写默认为139.198.15 1111端口青云服务器的
+        -p,--pasword     指定远程主机的密码,不写默认为139.198.15 1111端口青云服务器的
+        -p,--Port        指定远程主机的登录端口,不写默认为139.198.15 1111端口青云服务器的
+        -u,--user        指定远程主机的登录用户,不写默认为139.198.15 1111端口青云服务器的
 EOF
 }
 
